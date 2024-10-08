@@ -1,0 +1,150 @@
+/* ///////////////////////       Source Code Cascading Style Sheet     //////////////////// */
+
+* {
+  font-family: "Vazirmatn", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+  margin: 0;
+}
+
+/* Short Codes */
+.container {
+  max-width: 1226px;
+  margin: 0 auto;
+}
+ul li {
+  list-style: none;
+}
+.flex {
+  display: flex;
+}
+.text-align {
+  text-align: center;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-evenly {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+
+/* Short Codes */
+
+/* ///////////////////////       Header     //////////////////// */
+/* nav Bar */
+.user-mobile {
+  display: none;
+}
+.hamburger-menu {
+  display: none;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  gap: 32px;
+}
+
+nav li a {
+  color: rgba(96, 96, 96, 1);
+  text-decoration: none;
+}
+nav li a:hover {
+  color: rgba(29, 145, 204, 1);
+  border-bottom: 1px solid rgba(29, 145, 204, 1);
+  transition: 200ms;
+}
+
+/* nav Bar */
+
+.log-in-button {
+  background-color: rgba(29, 145, 204, 1);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  margin-inline-start: 24px;
+  gap: 8px;
+}
+/* ///////////////////////       Header (End)    //////////////////// */
+
+/* ///////////////////////       Main     //////////////////// */
+.slider-bilito{
+    position: relative;
+}
+.slider-bilito > a {
+  cursor: auto;
+}
+
+.slider-bilito > a > img {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.search-box {
+  position: absolute;
+  width: 1226px;
+  height: 191px;
+  background-color: rgb(207, 24, 137);
+}
+
+/* ///////////////////////       Responsive Codes Res:768px    //////////////////// */
+
+@media screen and (max-width: 768px) {
+  /* ••••••••••••••• body ••••••••••••••• */
+  body {
+    margin-top: 15px;
+  }
+  /* ••••••••••••••• Header ••••••••••••••• */
+  .hamburger-menu {
+    display: block;
+    margin-inline-start: 20px;
+  }
+  nav {
+    display: none;
+  }
+  .user-desktop {
+    display: none;
+  }
+  .user-mobile {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    left: 20px;
+  }
+  .container > div > button > span {
+    display: none;
+  }
+
+  .container > div > button {
+    background-color: rgba(232, 244, 250, 1);
+    padding: 4px;
+    margin-inline-end: 20px;
+  }
+  .container > div > p {
+    display: none;
+  }
+  header .logo img {
+    width: 96px;
+    height: 32px;
+    transition-delay: 1000ms;
+    transition: 1000ms;
+  }
+  /* ••••••••••••••• Main ••••••••••••••• */
+  .fly-bilito a img {
+    width: 100%;
+  }
+  .fly-bilito {
+    margin-top: 14px;
+  }
+}
